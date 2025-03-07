@@ -97,11 +97,22 @@ ul li:hover ul.dropdown {
     margin-left: 5px;
 }
 
-.navbar .search-btn:hover {
-    background-color: #1a8fd8 !important;
-    border-color: #1a8fd8 !important;
-    color: #ffffff !important;
+.navbar .search-btn,
+.navbar .cart-btn {
+    border: none !important;
+    outline: none !important; /* Removes focus outline */
 }
+
+.navbar .search-btn:hover,
+.navbar .search-btn:focus,
+.navbar .cart-btn:hover,
+.navbar .cart-btn:focus {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important; /* Ensures no glow or shadow */
+}
+
+
 
 .navbar .cart-btn {
     background-color: #ffffff;
